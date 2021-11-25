@@ -4,5 +4,4 @@ module.exports = (router) => {
     router.post("/login", logicController.login);
     router.post("/todos", logicController.bringTodo);
     router.post("/users", logicController.bringUsers);
-    router.post("/user", logicController.bringUserById);
 }

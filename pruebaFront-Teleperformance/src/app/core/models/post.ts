@@ -1,6 +1,7 @@
 import { Data } from './data';
 
-export interface Post {
- data:Data[];
+export interface Character {
+  quote: string;
+  character: string;
+  image: string;
 }
-
