@@ -1,0 +1,17 @@
+<div class="card-row">
+  <div class="card-col">
+    <nb-card size="small" *ngIf="post">
+      <nb-card-header>Presentacion de {{post.data.first_name}}</nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <img class="col-6" [src]="post.data.avatar" alt="">
+          <div class="col-6">
+            <div class="card-title">{{post.data.first_name| namePipe}}</div>
+            <div class="card-title">{{post.data.last_name| lastNamePipe}}</div>
+            <div class="card-title">{{post.data.email| email}}</div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<h5>Lista de Tareas</h5>
+<div class="container">
+  <ul *ngFor="let item of todos" class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center" (click)="changueTodoDone(item.id)" [ngClass]="{'complete':item.completed}">{{item.title}}
+    </li>
+  </ul>
+</div>

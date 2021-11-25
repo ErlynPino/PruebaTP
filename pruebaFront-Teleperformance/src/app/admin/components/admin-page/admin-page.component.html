@@ -1,0 +1,7 @@
+<div class="col">
+  <h5>Buscar:</h5>
+  <input type="text" placeholder="Buscar Ususario..." class="form-control" (keyup)="buscar(txtBuscar.value)"
+    #txtBuscar />
+</div>
+<hr />
+<app-users [userName]="searchValue"></app-users>
